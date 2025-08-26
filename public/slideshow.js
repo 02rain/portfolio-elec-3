@@ -1,4 +1,3 @@
-// Simple manual slideshow JS
 let slideIndex = 1;
 showSlides(slideIndex);
 
