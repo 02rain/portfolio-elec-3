@@ -1,56 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NBI • Home</title>
-<link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <header>
-  <div class="wrap">
-    <h1><a href="/">National Bureau of Investigation</a></h1>
-    <ul class="nav-links">
-      <li><a href="/about">About</a></li>
-      <li><a href="/services">Services</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
+<%- include("partials/header") %>
 
+<section class="hero">
+  <img src="/img/profile.jpg" alt="Alvin's Profile Picture" class="profile-picture">
+  <h2>Hi, I'm Alvin </h2>
+  <p>Full Stack Developer | Racist | Nigga</p>
+  <a href="/projects" class="btn">View My Work</a>
+</section>
 
-  <main class="wrap">
-    <div class="card">
-      <p>Welcome to the <span class="gold">NBI</span> portal — a sleek black interface designed for accessibility and clarity.</p>
-    </div>
-
-    <div class="slideshow">
+<!-- Slideshow Section -->
+<section class="slideshow">
   <div class="slides fade">
-    <img src="/img/NBI.jpg" alt="Slide 1">
+    <img src="/img/slide1.png" alt="Project 1">
+    <div class="caption">This is me</div>
   </div>
   <div class="slides fade">
-    <img src="/img/NBI2.jpg" alt="Slide 2">
+    <img src="/img/proj4.jpg" alt="Project 2">
+    <div class="caption">Github Clone</div>
   </div>
   <div class="slides fade">
-    <img src="/img/NBI3.GIF" alt="Slide 3">
+    <img src="/img/proj1.jpg" alt="Project 3">
+    <div class="caption">Portfolio</div>
   </div>
 
+  <!-- Navigation Arrows -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-
-    <div class="grid">
-      <div class="card"><strong>Integrity</strong><br/>Upholding high standards in all services.</div>
-      <div class="card"><strong>Service</strong><br/>Committed to fast and reliable assistance.</div>
-      <div class="card"><strong>Security</strong><br/>Your data and privacy are prioritized.</div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap">© 2025 National Bureau of Investigation — Black Portal</div>
-  </footer>
+</section>
 
 <script src="/slideshow.js"></script>
-</body>
-</html>
+
+<%- include("partials/footer") %>
