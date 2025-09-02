@@ -139,7 +139,6 @@ footer {
   color: white;
   font-weight: bold;
   font-size: 22px;
-  border-radius: 50%;
   user-select: none;
   background: rgba(0,0,0,0.5);
   transition: 0.3s;
@@ -151,27 +150,6 @@ footer {
 
 .prev { left: 10px; }
 .next { right: 10px; }
-
-.dots {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.dot {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 4px;
-  background: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background 0.6s ease;
-}
-
-.active, .dot:hover {
-  background: var(--accent);
-}
-
 
 .error-page {
   text-align: center;
