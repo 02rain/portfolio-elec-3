@@ -227,3 +227,11 @@ footer {
 .footer-links p {
         margin-top: 10px;
 }
+
+.tech-stack a img {
+  transition: transform 0.2s ease;
+}
+
+.tech-stack a:hover img {
+  transform: scale(1.1);
+}
